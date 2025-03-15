@@ -1,32 +1,115 @@
-# App Orçamento Pessoal
+# 💰 App Orçamento Pessoal - Controle Financeiro Inteligente
 
-Este aplicativo é uma ferramenta prática para gerenciamento de despesas pessoais, desenvolvida durante um curso de desenvolvimento web.
+<div align="center">
 
-## Funcionalidades
+  ![Capa do Projeto](./src/assets/images/logo/logo.png)
 
-- **Adicionar Despesas**: Cadastre suas despesas fornecendo informações como data, tipo, descrição e valor. O aplicativo verifica se todos os campos foram preenchidos corretamente antes de salvar.
-- **Listar Despesas**: Visualize todas as despesas registradas com opções de filtros por data, tipo, descrição e valor.
-- **Excluir Despesas**: Remova facilmente despesas indesejadas.
+</div>
 
-## Detalhes Técnicos
+Um aplicativo web intuitivo para gestão financeira pessoal, desenvolvido com as melhores práticas de desenvolvimento front-end. Controle suas despesas de forma simples e eficiente!
 
-### Classes JavaScript
-- `Despesa`: Representa uma despesa com propriedades para data, tipo, descrição e valor.
-- `Bd`: Gerencia as operações de armazenamento local, incluindo adicionar, recuperar e excluir despesas.
+[![Licença MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
 
-### Funções JavaScript
-- `cadastrarDespesa()`: Valida os dados e salva a despesa no armazenamento local.
-- `carregaListaDespesas()`: Atualiza e exibe a lista de despesas na interface.
-- `pesquisarDespesa()`: Filtra as despesas listadas conforme critérios especificados pelo usuário.
+## 🎥 Demonstração
 
-### Front-end
-- Utilização de **HTML** e **CSS** para criar uma interface de usuário intuitiva e responsiva.
+![Interface do Aplicativo](./src/assets/images/screenshots/demo.gif)
 
-## Observações Importantes
+## ✨ Funcionalidades Destacadas
 
-- **Armazenamento**: Utiliza o Local Storage do navegador para manter as despesas, que são armazenadas no formato JSON.
-- **Segurança**: Não há sistema de autenticação, o que significa que qualquer pessoa com acesso ao navegador pode visualizar ou alterar as despesas.
+### 📅 Registro Inteligente
+- 🗓️ Seletor de data integrado (dia/mês/ano)
+- 📋 Categorização automática (Alimentação, Educação, Saúde, etc.)
+- ⚡ Validação em tempo real dos campos
+- 💾 Armazenamento local persistente
+
+### 🔍 Consulta Avançada
+- 🔎 Sistema de filtros combinados
+- 🗂️ Visualização tabular organizada
+- 📊 Ordenação por data/categoria/valor
+- 🗑️ Exclusão segura com confirmação
+
+### 🛠️ Técnicas Avançadas
+- 🧩 Arquitetura modular em classes ES6
+- 📦 Persistência em LocalStorage
+- 🎨 Design System consistente
+- 📱 Layout responsivo
+
+## 🛠️ Tecnologias Utilizadas
+
+| Camada          | Tecnologias                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| **Frontend**    | HTML5, CSS3, JavaScript (ES6+)                                              |
+| **Framework**   | Bootstrap 4.0.0                                                             |
+| **Ícones**      | Font Awesome 5.0.8                                                          |
+| **Fontes**      | JetBrains Mono (UI), League Spartan (Títulos)                               |
+| **Armazenamento**| LocalStorage (IndexedDB-like)                                              |
+
+## 🚀 Como Usar
+
+1. **Acesso Imediato**
+   ```bash
+   # Clone o repositório
+   git clone https://github.com/DanAntunes/orcamento-pessoal.git
+   
+   # Inicie o servidor local
+   cd orcamento-pessoal && npx serve
+   ```
+
+2. **Fluxo Principal**
+   - **Cadastro**: 
+     1. Selecione a data
+     2. Escolha a categoria
+     3. Insira descrição e valor
+     4. Salve com um clique!
+
+   - **Consulta**:
+     1. Use filtros combinados
+     2. Ordene por qualquer coluna
+     3. Ações rápidas com ícones
+
+## 📦 Estrutura do Projeto
+
+```
+orcamento-pessoal/
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css        # Estilos principais
+│   │   ├── scripts/
+│   │   │   └── app.js           # Lógica da aplicação
+│   │   └── images/              # Assets visuais
+│   └── page/
+│       └── consulta.html        # Página de consulta
+├── index.html                   # Página principal
+└── README.md                    # Documentação
+```
+
+## 🛡️ Considerações de Segurança
+
+⚠️ **Atenção**: Por se tratar de uma aplicação frontend pura:
+- Todos os dados são armazenados localmente no navegador
+- Não requer autenticação
+- Recomendado para uso pessoal em dispositivos seguros
+
+## 📌 Roadmap Futuro
+
+- [ ] Sincronização com Google Drive
+- [ ] Gráficos de análise de gastos
+- [ ] Sistema de categorias customizáveis
+- [ ] Modo noturno/diurno
+
+## 👨💻 Desenvolvedor
+
+Dan Antunes  
+[![Portfólio](https://img.shields.io/badge/🌐_Portfolio-000?style=flat)](https://danantunes-github-io.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dan-de-jesus/)
 
 ---
 
-Desenvolvido com ❤️ por Dan Antunes.
+**Licença MIT** - © 2025 Dan Antunes. Consulte o arquivo [LICENSE](LICENSE) para detalhes.
+
+
