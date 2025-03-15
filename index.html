@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados  essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Title & Descripton -->
-  <title>Orçamento Pessoal - Home</title>
-  <meta name="description" content="Site para organização de despesas">
-  <!-- Framework Bootstrap  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="src/assets/css/style.css">
-  <!-- Favicon -->
-   <link rel="shortcut icon" href="public/image/favicon/favicon.png" type="image/x-icon">
+    <!-- SEO Básico -->
+    <title>Orçamento Pessoal - Home</title>
+    <meta name="description" content="Gerencie suas finanças pessoais com eficiência! Registre despesas 
+    por categoria (Alimentação, Educação, Saúde, etc.), consulte seu histórico financeiro e planeje seu orçamento.
+     Ferramenta simples e intuitiva para controle financeiro doméstico. ">
+    <meta name="keywords" content="orçamento pessoal, controle financeiro, gestão de despesas,
+     planejamento financeiro, registro de gastos, economia doméstica, educação financeira, alimentação,
+    lazer, saúde, transporte, despesas mensais ">
+    <meta name="author" content="Danilo Antunes">
+  
+    <!-- Controle de indexação  -->
+    <meta name="robots" content="index, follow">
+  
+    <!-- Web Manifest e Configurações PWA -->
+    <link rel="manifest" href="./src/assets/images/favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+      
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/images/favicon/favicon-16x16.png">
+  
+     <!-- Folha de estilo principal -->
+     <link rel="stylesheet" href="./src/assets/css/style.css">
+  
+    <!-- Framework Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body class="text-light bg-body-color">
-  <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-nav-color">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-         <img src="public/image/logo/logo.png" width="50" height="35" alt="Orçamento pessoal">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Cadastro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="consulta.html">Consulta</a>
-          </li>
-        </ul>
-        
+  <!-- Cabeçalho -->
+  <header class="bg-nav-color">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 bg-nav-color">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+           <img src="./src/assets/images/logo/logo.png" class="logo" alt="Logo Orçamento pessoal">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/assets/page/consulta.html">Consulta</a>
+            </li>
+          </ul>
+          
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <div class="container bg-body-color">
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="container bg-body-color">
     <div class="row">
       <div class="col mb-5">
         <h1 class="display-4">Registro de nova despesa</h1>
@@ -50,7 +73,7 @@
       <div class="col-md-2">
         <select class="form-control" id="ano">
           <option value="">Ano</option>
-          <option value="2024">2024</option>
+          <option value="2025">2025</option>
         </select>
       </div>
 
@@ -103,7 +126,11 @@
         </button>
       </div>
     </div>
-  </div>
+  </main>
+  <!-- Rodapé -->
+  <footer class="text-center py-3">
+    <small>&copy; 2025 Orçamento Pessoal. Todos os direitos reservados.</small>
+  </footer>
 
   <!-- Modal -->
   <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
